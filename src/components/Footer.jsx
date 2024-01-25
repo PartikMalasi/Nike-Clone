@@ -55,7 +55,7 @@ const Footer = () => {
             alt=""
             className="rounded-full m-0"
           />
-          <p>Copywrite @Partik Malasi. All write reserved</p>
+          <p>Copywrite @Partik Malasi. All rights reserved</p>
         </div>
         <p className="font-montserrat">Terms and Condition</p>
       </div>
