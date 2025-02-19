@@ -5,7 +5,7 @@ import { footerLinks, socialMedia } from "../constants/data";
 const Footer = () => {
   return (
     <footer>
-      <div className="flex items-start gap-20 justify-between flex-wrap max-lg:flex-col">
+      <div className="flex items-start gap-20 sm:justify-between justify-center  flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
           <a href="/">
             <img src={footerLogo} alt="" width={150} height={46} />
@@ -14,7 +14,7 @@ const Footer = () => {
             Get your shoes ready for the new term at your nearest Nike store.
             Find Your perfect size in store. Get rewards
           </p>
-          <div className="flex gap-5 mt-8 items-center ">
+          <div className="flex  gap-5 mt-8 items-center ">
             {socialMedia.map((icon) => (
               <div
                 key={icon.alt}
@@ -25,9 +25,12 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-1 justify-between lg:gap-10 gap-20 text-white">
+        <div className="flex flex-1 justify-center sm:justify-between items-start flex-col sm:flex-row lg:gap-10 gap-20 text-white">
           {footerLinks.map((section) => (
-            <div key={section.title}>
+            <div
+              key={section.title}
+              className="flex sm:justify-center sm:items-center flex-col"
+            >
               <h4 className="text-2xl mb-6 leading-normal font-montserrat ">
                 {section.title}
               </h4>
@@ -55,7 +58,7 @@ const Footer = () => {
             alt=""
             className="rounded-full m-0"
           />
-          <p>Copywrite @Partik Malasi. All write reserved</p>
+          <p>Copywrite @Partik Malasi. All rights reserved</p>
         </div>
         <p className="font-montserrat">Terms and Condition</p>
       </div>
